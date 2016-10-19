@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context>
+<Context path="/servlet3-sample">
+<!--  
 	<Resource name="jdbc/DefaultDB"
 		  driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
 		  type="javax.sql.DataSource"
 		  url="jdbc:derby:memory:myDB;create=true"/>
+-->
+
+    <Resource name="jdbc/DefaultDB"
+              auth="Container"
+              type="javax.sql.DataSource"
+              factory="com.sap.jpaas.service.persistence.core.JNDIDataSourceFactory"/>
+	  
 </Context>
