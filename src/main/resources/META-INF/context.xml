@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/DefaultDB"
+		  driverClassName="org.apache.derby.jdbc.EmbeddedDriver"
+		  type="javax.sql.DataSource"
+		  url="jdbc:derby:memory:myDB;create=true"/>
+</Context>
